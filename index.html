@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santuario Mariano Virgen de los Ángeles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0066cc; /* Fondo de color sólido */
+            color: white;
+        }
+
+        nav {
+            text-align: center;
+            background: #004a99;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            color: #333;
+            border-radius: 15px;
+            margin: 30px 0;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #0066cc;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image-container img {
+            max-width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            background: linear-gradient(45deg, #004a99, #ffdd57);
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1em;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .button-container a:hover {
+            background: linear-gradient(45deg, #ffdd57, #004a99);
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #004a99;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #ffdd57;
+        }
+
+        .header-background {
+            background: linear-gradient(45deg, #004a99, #ffdd57); /* Fondo degradado como los botones */
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .header-background h1 {
+            font-size: 2.5em;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .header-background p {
+            font-size: 1.2em;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-background">
+        <h1>Santuario Mariano Virgen de los Ángeles</h1>
+        <p>Un lugar de fe y devoción en Costa Rica</p>
+    </div>
+    <nav>
+        <a href="#lecturas">Lecturas</a>
+        <a href="#italia">Italia</a>
+        <a href="#eeuu">EE.UU.</a>
+        <a href="#francia">Francia</a>
+        <a href="#alemania">Alemania</a>
+        <a href="#costarica">Costa Rica</a>
+        <a href="#santuario">Santuario</a>
+        <a href="#ubicacion">Ubicación</a>
+    </nav>
+    <main>
+        <section id="anuncios">
+            <h2>Maria Madre de Dios</h2>
+            <div class="image-container">
+                <img src="./imagenes/virgen.png" alt="Imagen de la Virgen de los Ángeles">
+                <img src="./imagenes/escudo.jpg" alt="Escudo del Santuario">
+            </div>
+            <div class="button-container">
+                <a href="https://www.facebook.com/parroquiasantuario.cartagena?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i> Visítanos en Facebook para ver los anuncios</a>
+            </div>
+        </section>
+
+        <section id="lecturas">
+            <h2>Lecturas del Día</h2>
+            <p style="text-align: center;">Consulta las lecturas de la liturgia diaria en el Vaticano:</p>
+            <div class="button-container">
+                <a href="https://www.vaticannews.va/es/evangelio-de-hoy.html" target="_blank"><i class="fas fa-book-open"></i> Leer ahora</a>
+            </div>
+        </section>
+
+        <section id="italia">
+            <h2>Italia</h2>
+            <p>Scopri le letture del giorno al convegno italiano.</p>
+            <div class="button-container">
+                <a href="https://www.chiesacattolica.it/liturgia-del-giorno/" target="_blank">Vedi Lettura</a>
+            </div>
+        </section>
+
+        <section id="eeuu">
+            <h2>EE.UU.</h2>
+            <p>Check out the readings of the day in the American conference.</p>
+            <div class="button-container">
+                <a href="https://bible.usccb.org/daily-bible-reading" target="_blank">See Reading</a>
+            </div>
+        </section>
+
+        <section id="francia">
+            <h2>Francia</h2>
+            <p>Découvrez les lectures du jour au colloque français.</p>
+            <div class="button-container">
+                <a href="https://eglise.catholique.fr/approfondir-sa-foi/la-celebration-de-la-foi/le-dimanche-jour-du-seigneur/" target="_blank">Voir Lecture</a>
+            </div>
+        </section>
+
+        <section id="alemania">
+            <h2>Alemania</h2>
+            <p>Schauen Sie sich die Tageslesungen der deutschen Konferenz an.</p>
+            <div class="button-container">
+                <a href="https://www.katholisch.de/stundenbuch" target="_blank">Siehe Lesen</a>
+            </div>
+        </section>
+
+        <section id="costarica">
+            <h2>Costa Rica</h2>
+            <div class="button-container">
+                <a href="https://www.iglesiacr.org/" target="_blank">Conferencia Episcopal de Costa Rica</a>
+            </div>
+        </section>
+
+        <section id="santuario">
+            <h2>Santuario Mariano</h2>
+            <p>El Santuario Mariano Virgen de los Ángeles, ubicado en Cartagena, Guanacaste, Costa Rica, es un importante centro de devoción católica en la región. Este santuario, que también funciona como parroquia, pertenece a la Diócesis de Tilarán–Liberia y sigue el rito romano (latino). 
+                El templo actual, construido a principios del siglo XX, reemplazó a una iglesia de madera que se encontraba en el mismo lugar. En septiembre de 1961, tras la creación de la Diócesis de Tilarán, se estableció la Parroquia de Arenal de Santa Cruz, teniendo como patrona a Nuestra Señora de los Ángeles. 
+                El santuario es conocido por su activa participación en la comunidad local, organizando diversas celebraciones litúrgicas y eventos religiosos. Por ejemplo, en junio de 2022, la parroquia celebró con gran devoción la Solemnidad del Corpus Christi, contando con la participación de niños de catequesis y sus familias. 
+                Además, el santuario ha sido escenario de actos de fe significativos, como la confección de un vestido para la Virgen de los Ángeles por parte de una devota local en julio de 2024, en conmemoración de los 200 años de la Anexión de Guanacaste. 
+                El Santuario Mariano Virgen de los Ángeles en Cartagena es, sin duda, un lugar de profunda espiritualidad y tradición para los fieles católicos de la región y del país..</p>
+            <div class="image-container">
+                <img src="./imagenes/igle1.jpg" alt="Sacerdotes del Santuario Mariano">
+            </div>
+
+
+        <section id="ubicacion">
+            <h2>Ubicación del Santuario</h2>
+            <p>Encuentra el Santuario Mariano Virgen de los Ángeles en Cartagena, Guanacaste, Costa Rica:</p>
+            <div style="text-align: center;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.209871012247!2d-85.544592!3d10.3503197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9ec47b607dc09d%3A0x54ff441cfb5c70b!2sSantuario%20Mariano%20Virgen%20de%20los%20%C3%81ngeles!5e0!3m2!1ses!2scr!4v1683643947385!5m2!1ses!2scr" 
+                    width="600" 
+                    height="450" 
+                    style="border:0; border-radius: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Santuario Mariano
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
