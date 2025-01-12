@@ -211,7 +211,7 @@ section#contacto {
 <body>
     <div class="header-background">
         <h1>Santuario Mariano Virgen de los Ángeles</h1>
-        <p>Un lugar de fe y devoción en Costa Rica</p>
+        <p>Un lugar de fe y devoción en Guanacaste , Santa Cruz , Cartagena ,Costa Rica</p>
     </div>
     <nav>
         <a href="#lecturas">Lecturas</a>
@@ -318,13 +318,36 @@ section#contacto {
 
         <section id="contacto">
             <h2>Contáctanos</h2>
-            <p>¿Tienes alguna pregunta, comentario o necesitas más información? Llena el formulario y nos pondremos en contacto contigo.</p>
-            <form action="mailto:mjimenez@sistemas03il.com" method="post" enctype="text/plain">
+            <p>Envíanos tus preguntas, comentarios o peticiones especiales a través del formulario a continuación:</p>
+            <form action="https://formspree.io/f/xovvybew" method="post" onsubmit="handleSubmit(event)">
                 <input type="text" name="nombre" placeholder="Tu Nombre" required>
                 <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-                <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <textarea name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
+        </section>
+        
+        <script>
+            function handleSubmit(event) {
+                event.preventDefault(); // Evita el comportamiento por defecto del formulario
+                const form = event.target;
+                fetch(form.action, {
+                    method: form.method,
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(() => {
+                    alert('Formulario enviado con éxito.');
+                    window.location.href = 'https://www.virgendelosangelescg.com/'; // Redirige a la página principal
+                }).catch(() => {
+                    alert('Ocurrió un error al enviar el formulario.');
+                });
+            }
+        </script>
+        
+        
+        
         </section>
         <section id="aviso-legal">
             <h2>Aviso Legal</h2>
